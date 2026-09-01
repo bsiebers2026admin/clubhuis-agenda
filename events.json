@@ -1,5 +1,5 @@
 {
-    "last_updated": "02-09-2026 00:54",
+    "last_updated": "02-09-2026 00:55",
     "events": [
         {
             "title": "Bestuur SOCH + adviseur",
@@ -110,7 +110,16 @@
             "opmerking": "Nadere info volgt"
         },
         {
-            "title": "Test",
+            "title": "Test_BAS",
+            "start": "2026-09-10T12:00:00",
+            "end": "2026-09-10T16:00:00",
+            "starttijd": "12:00",
+            "organisatie": "Extern",
+            "locatie": "Clubhuis Wilgendaal",
+            "opmerking": "Test"
+        },
+        {
+            "title": "Test_BAS",
             "start": "2026-09-12T12:00:00",
             "end": "2026-09-12T16:00:00",
             "starttijd": "12:00",
