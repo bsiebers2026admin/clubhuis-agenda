@@ -1,0 +1,5 @@
+variables.py
+ClubhuisAgenda.xlsx
+__pycache__/
+.idea/
+.venv/

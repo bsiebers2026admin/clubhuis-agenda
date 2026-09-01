@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Clubhuis Agenda</title>
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.19/index.global.min.js"></script>
+    <style>* {
+        box-sizing: border-box
+    }
+
+    body {
+        font-family: Segoe UI, Arial, sans-serif;
+        background: #f5f6f8;
+        margin: 12px
+    }
+
+    .card {
+        background: #fff;
+        border-radius: 14px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, .08)
+    }
+
+    .header {
+        padding: 16px;
+        margin-bottom: 12px
+    }
+
+    .header-grid {
+        display: grid;
+        grid-template-columns: 2.4fr 0.6fr 600px;
+        gap: 20px;
+        align-items: center
+
+    }
+
+
+
+    .logo {
+        max-width: 600px;
+        max-height: 200px;
+        width: 100%;
+        object-fit: contain
+    }
+
+    .reserve-button {
+        display: inline-block;
+        background: #0066cc;
+        color: #fff;
+        text-decoration: none;
+        padding: 14px 24px;
+        border-radius: 8px;
+        font-weight: bold
+    }
+
+    .update {
+        display: inline-block;
+        background: #eef5ff;
+        padding: 6px 10px;
+        border-radius: 8px;
+        margin-top: 8px
+    }
+
+    .filters {
+        display: flex;
+        gap: 8px;
+        margin-top: 12px;
+        flex-wrap: wrap
+    }
+
+    .pill {
+        padding: 8px 12px;
+        border-radius: 20px;
+        color: #fff;
+        font-weight: bold
+    }
+
+    .soch-bg {
+        background: #0066cc
+    }
+
+    .herpinia-bg {
+        background: #28a745
+    }
+
+    .vip-bg {
+        background: #ff8800
+    }
+
+    .extern-bg {
+        background: #6f42c1
+    }
+
+    .content {
+        display: flex;
+        gap: 12px
+    }
+
+    .sidebar {
+        width: 220px;
+        padding: 12px
+    }
+
+    .calendar-wrap {
+        flex: 1;
+        padding: 12px
+    }
+
+    .details-panel {
+
+    width: 320px;
+        min-width: 320px;
+
+    padding: 15px;
+
+    background: white;
+
+    border-radius: 14px;
+
+    box-shadow: 0 2px 8px rgba(0,0,0,.08);
+
+}
+
+    .search {
+        width: 100%;
+        padding: 10px;
+        border-radius: 8px;
+        border: 1px solid #ddd
+    }
+
+    .monthLabel {
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 10px
+    }
+
+    .event-card {
+        padding: 10px;
+        margin-bottom: 8px;
+        border-radius: 8px;
+        background: #fafafa
+    }
+
+    .soch {
+        border-left: 5px solid #0066cc
+    }
+
+    .herpinia {
+        border-left: 5px solid #28a745
+    }
+
+    .vip {
+        border-left: 5px solid #ff8800
+    }
+
+    .extern {
+        border-left: 5px solid #6f42c1
+    }
+
+    .fc-daygrid-day {
+        height: 55px !important
+    }
+
+    .fc-daygrid-day {
+    position: relative;
+
+
+}
+
+.occupation-overlay {
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    pointer-events: none;
+
+    z-index: 0;
+
+}
+
+.fc-daygrid-day-top,
+.fc-daygrid-day-events {
+
+    position: relative;
+
+    z-index: 2;
+
+}
+
+.fc-event-main {
+
+    white-space: pre-line !important;
+
+}
+
+.fc-daygrid-event {
+
+    white-space: normal !important;
+
+    overflow: visible !important;
+
+    text-overflow: unset !important;
+
+    word-break: break-word;
+
+    line-height: 1.1;
+
+}
+
+.fc-event-title {
+
+    white-space: normal !important;
+
+    overflow: visible !important;
+
+    text-overflow: unset !important;
+
+    word-break: break-word;
+
+    font-size: 11px;
+
+    line-height: 1.1;
+
+}
+
+    .today-box {
+        outline: 2px solid #0066cc
+    }
+
+    .modal {
+        display: none;
+        position: fixed;
+        inset: 0;
+        background: rgba(0, 0, 0, .5)
+    }
+
+    .modal-content {
+        background: #fff;
+        max-width: 500px;
+        padding: 20px;
+        margin: 100px auto;
+        border-radius: 12px
+    }
+
+    @media (max-width: 1100px) {
+        .header-grid{
+            grid-template-columns:
+                1.8fr 1fr 300px;
+        }
+
+        .content {
+            flex-direction: column
+        }
+
+        .sidebar {
+            width: 100%
+        }
+
+        .fc-daygrid-event {
+
+    white-space: normal !important;
+
+    overflow: visible !important;
+
+    text-overflow: unset !important;
+
+    word-break: break-word;
+
+    line-height: 1.1;
+
+}
+
+.fc-event-title {
+
+    white-space: normal !important;
+
+    overflow: visible !important;
+
+    text-overflow: unset !important;
+
+    word-break: break-word;
+
+    font-size: 11px;
+
+    line-height: 1.1;
+
+}
+
+
+
+
+
+
+    }</style>
+</head>
+<body>
+<div class="card header">
+    <div class="header-grid">
+        <div><h1 style="margin:0">Clubhuis Agenda</h1>
+            <div>Bekijk alle geplande activiteiten van het clubhuis.</div>
+            <div class="update">Laatst bijgewerkt: <span id="lastUpdated">...</span></div>
+        </div>
+<div style="
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start;
+    margin-left:-300px;
+">
+
+
+            <a class="reserve-button" target="_blank"
+                                          href="https://sportparkherpen.sharepoint.com/:x:/r/sites/ClubhuisAgenda/_layouts/15/Doc.aspx?sourcedoc=%7B3D9803F5-C271-4476-995E-E5F87AA93C13%7D&file=ClubhuisAgenda.xlsx&action=default&mobileredirect=true">Ruimte
+            reserveren</a>
+
+
+
+        <div style="
+            margin-top:6px;
+            font-size:11px;
+            color:#999;
+                 ">
+            Reserveren vereist een OpenClubHerpen-account
+        </div>
+
+            </div>
+
+
+        <div style="text-align:right"><img src="Logo_SOCH.jpg" class="logo" onerror="this.style.display='none'"></div>
+    </div>
+    <div class="filters"><label class="pill soch-bg"><input type="checkbox" class="org-filter" value="SOCH" checked>
+        SOCH</label><label class="pill herpinia-bg"><input type="checkbox" class="org-filter" value="Herpinia" checked>
+        Herpinia</label><label class="pill vip-bg"><input type="checkbox" class="org-filter" value="VIP" checked>
+        VIP</label><label class="pill extern-bg"><input type="checkbox" class="org-filter" value="Extern" checked>
+        Extern</label></div>
+</div>
+
+<div class="content">
+
+    <div class="card sidebar">
+
+        <div id="monthLabel"
+             class="monthLabel"></div>
+
+        <input id="search"
+               class="search"
+               placeholder="Zoek activiteit...">
+
+        <div id="eventList"></div>
+
+    </div>
+
+    <div class="card calendar-wrap">
+
+        <div id="calendar"></div>
+
+    </div>
+
+    <div class="card details-panel">
+
+        <h3>Details</h3>
+
+        <div id="detailsContent">
+
+            Klik op een activiteit.
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<script>let cal, events = [];
+const colors = {SOCH: '#0066cc', Herpinia: '#28a745', VIP: '#ff8800', Extern: '#6f42c1'};
+
+function filters() {
+    return [...document.querySelectorAll('.org-filter:checked')].map(x => x.value)
+}
+
+function show(e) {
+
+    document
+        .getElementById(
+            'detailsContent'
+        ).innerHTML = `
+
+        <h3>${e.title}</h3>
+
+        <p>
+            <strong>Start</strong><br>
+            ${e.extendedProps.starttijd || ''}
+        </p>
+
+        <p>
+            <strong>Organisatie</strong><br>
+            ${e.extendedProps.organisatie || ''}
+        </p>
+
+        <p>
+            <strong>Locatie</strong><br>
+            ${e.extendedProps.locatie || ''}
+        </p>
+
+        <p>
+            <strong>Opmerking</strong><br>
+            ${e.extendedProps.opmerking || '-'}
+        </p>
+
+        `;
+
+}
+
+function paintDays() {
+
+    document
+        .querySelectorAll(
+            '.fc-daygrid-day'
+        )
+        .forEach(cell => {
+
+            const old =
+                cell.querySelector(
+                    '.occupation-overlay'
+                );
+
+            if(old){
+                old.remove();
+            }
+
+        });
+
+    const grouped = {};
+
+    events
+        .filter(
+            e =>
+                filters().includes(
+                    e.organisatie
+                )
+        )
+        .forEach(e => {
+
+            const date =
+                e.start.substring(0,10);
+
+            grouped[date] =
+                grouped[date] || [];
+
+            if(
+                !grouped[date]
+                .includes(
+                    e.organisatie
+                )
+            ){
+
+                grouped[date]
+                    .push(
+                        e.organisatie
+                    );
+
+            }
+
+        });
+
+    document
+        .querySelectorAll(
+            '.fc-daygrid-day'
+        )
+        .forEach(cell => {
+
+            const date =
+                cell.getAttribute(
+                    'data-date'
+                );
+
+            if(!grouped[date]){
+                return;
+            }
+
+            const orgs =
+                grouped[date];
+
+            const overlay =
+                document.createElement('div');
+
+            overlay.className =
+                'occupation-overlay';
+
+            if(orgs.length === 1){
+
+                overlay.style.background =
+                    colors[orgs[0]] + '33';
+
+            }
+
+            if(orgs.length === 2){
+
+                overlay.style.background =
+                    `linear-gradient(
+                        to bottom,
+                        ${colors[orgs[0]]}33 0%,
+                        ${colors[orgs[0]]}33 50%,
+                        ${colors[orgs[1]]}33 50%,
+                        ${colors[orgs[1]]}33 100%
+                    )`;
+
+            }
+
+            if(orgs.length === 3){
+
+                overlay.style.background =
+                    `linear-gradient(
+                        to bottom,
+                        ${colors[orgs[0]]}33 0%,
+                        ${colors[orgs[0]]}33 33%,
+                        ${colors[orgs[1]]}33 33%,
+                        ${colors[orgs[1]]}33 66%,
+                        ${colors[orgs[2]]}33 66%,
+                        ${colors[orgs[2]]}33 100%
+                    )`;
+
+            }
+
+            cell.appendChild(
+                overlay
+            );
+
+        });
+
+}
+
+
+
+
+
+
+
+function updateSidebar(start, end) {
+    monthLabel.innerText = cal.view.title;
+    eventList.innerHTML = '';
+    let term = (search.value || '').toLowerCase();
+    events.filter(e => filters().includes(e.organisatie)).forEach(e => {
+        let d = new Date(e.start);
+        if (d >= start && d < end && e.title.toLowerCase().includes(term)) {
+            let c = document.createElement('div');
+            c.className = 'event-card ' + (e.organisatie || 'extern').toLowerCase();
+
+            const month =
+    d.toLocaleDateString(
+        'nl-NL',
+        {
+            month:'short'
+        }
+    ).toUpperCase();
+
+c.innerHTML = `
+    <div
+        style="
+        font-size:11px;
+        color:#666;
+        font-weight:bold;
+        ">
+
+        ${d.getDate()} ${month}
+
+    </div>
+
+    <div
+        style="
+        font-size:12px;
+        color:#444;
+        ">
+
+        ${e.starttijd || ''}
+
+    </div>
+
+    <div
+        style="
+        font-weight:bold;
+        margin-top:4px;
+        ">
+
+        ${e.title}
+
+    </div>
+
+    <div
+        style="
+        font-size:12px;
+        color:#666;
+        ">
+
+        ${e.locatie || ''}
+
+    </div>
+`;
+
+            c.onclick = () => show({title: e.title, extendedProps: e});
+            eventList.appendChild(c)
+        }
+    })
+}
+
+fetch('events.json').then(r => r.json()).then(data => {
+    events = data.events || data;
+    if (data.last_updated) lastUpdated.innerText = data.last_updated;
+    events.forEach(e => e.color = colors[e.organisatie] || '#777');
+    cal = new FullCalendar.Calendar(document.getElementById('calendar'), {
+                locale: 'nl',
+
+        height: 'auto',
+        contentHeight: 'auto',
+        aspectRatio: 2.8,
+
+
+        initialView: 'dayGridMonth',
+        headerToolbar: {left: 'prev,next today', center: 'title', right: 'dayGridMonth,timeGridWeek,listMonth'},
+        buttonText: {today: 'Vandaag', month: 'Maand', week: 'Week', list: 'Agenda'},
+
+        customButtons: {
+    myToday: {
+        text: 'Vandaag',
+        click: function() {
+
+            cal.today();
+
+            updateSidebar(
+                cal.view.activeStart,
+                cal.view.activeEnd
+            );
+
+            setTimeout(
+                paintDays,
+                50
+            );
+
+        }
+    }
+},
+
+
+
+        events: (i, s) => s(events.filter(e => filters().includes(e.organisatie))),
+        datesSet: (i) => {
+            updateSidebar(i.start, i.end);
+            setTimeout(paintDays, 50)
+        },
+        eventClick: (i) => show(i.event),
+        dayCellDidMount: (a) => {
+            if (a.date.toDateString() === new Date().toDateString()) a.el.classList.add('today-box')
+        }
+    });
+    cal.render();
+    updateSidebar(cal.view.activeStart, cal.view.activeEnd);
+    paintDays();
+    document.querySelectorAll('.org-filter').forEach(x => x.addEventListener('change', () => {
+        cal.refetchEvents();
+        updateSidebar(cal.view.activeStart, cal.view.activeEnd);
+        setTimeout(paintDays, 50)
+    }));
+    search.addEventListener('input', () => updateSidebar(cal.view.activeStart, cal.view.activeEnd));
+
+
+
+});
+</script>
+</body>
+</html>
