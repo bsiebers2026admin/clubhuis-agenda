@@ -1,10 +1,11 @@
 {
-    "last_updated": "01-09-2026 22:36",
+    "last_updated": "02-09-2026 00:38",
     "events": [
         {
             "title": "Bestuur SOCH + adviseur",
             "start": "2025-05-05T20:30:00",
             "end": "2025-05-05T22:30:00",
+            "starttijd": "20:30",
             "organisatie": "SOCH",
             "locatie": "Broekstraat 9a te Herpen",
             "opmerking": "Mark liet verhinderd"
@@ -13,6 +14,7 @@
             "title": "Bestuur SOCH - verenigingen",
             "start": "2025-05-26T20:30:00",
             "end": "2025-05-26T22:30:00",
+            "starttijd": "20:30",
             "organisatie": "SOCH",
             "locatie": "Clubhuis Wilgendaal",
             "opmerking": ""
@@ -21,6 +23,7 @@
             "title": "Bestuur SOCH + adviseur",
             "start": "2025-06-24T20:30:00",
             "end": "2025-06-24T22:30:00",
+            "starttijd": "20:30",
             "organisatie": "SOCH",
             "locatie": "Broekstraat 9a te Herpen",
             "opmerking": ""
@@ -29,6 +32,7 @@
             "title": "Bestuur SOCH - verenigingen",
             "start": "2025-08-25T21:00:00",
             "end": "2025-08-25T22:30:00",
+            "starttijd": "21:00",
             "organisatie": "SOCH",
             "locatie": "Clubhuis Wilgendaal",
             "opmerking": "Aanvangstijdstip aangepast"
@@ -37,6 +41,7 @@
             "title": "Bestuur SOCH + adviseur",
             "start": "2025-09-08T20:30:00",
             "end": "2025-09-08T22:30:00",
+            "starttijd": "20:30",
             "organisatie": "SOCH",
             "locatie": "Broekstraat 9a te Herpen",
             "opmerking": ""
@@ -45,6 +50,7 @@
             "title": "Starthandeling wethouder Frank den Brok",
             "start": "2025-09-17T17:00:00",
             "end": "2025-09-17T19:00:00",
+            "starttijd": "17:00",
             "organisatie": "SOCH",
             "locatie": "Clubhuis Wilgendaal",
             "opmerking": "Samenwerking alle partijen gevraagd"
@@ -53,6 +59,7 @@
             "title": "Bestuur SOCH + adviseur",
             "start": "2025-09-22T20:30:00",
             "end": "2025-09-22T22:30:00",
+            "starttijd": "20:30",
             "organisatie": "SOCH",
             "locatie": "Broekstraat 9a te Herpen",
             "opmerking": ""
@@ -61,6 +68,7 @@
             "title": "Bestuur SOCH - verenigingen",
             "start": "2025-09-29T20:30:00",
             "end": "2025-09-29T22:30:00",
+            "starttijd": "20:30",
             "organisatie": "SOCH",
             "locatie": "Clubhuis Wilgendaal",
             "opmerking": ""
@@ -69,6 +77,7 @@
             "title": "Bestuur SOCH - verenigingen",
             "start": "2025-12-01T20:30:00",
             "end": "2025-12-01T22:30:00",
+            "starttijd": "20:30",
             "organisatie": "SOCH",
             "locatie": "Clubhuis Wilgendaal",
             "opmerking": "Verplaatst vanaf 24-11"
@@ -77,6 +86,7 @@
             "title": "Nieuwjaarsbijeenkomst",
             "start": "2026-01-01T14:00:00",
             "end": "2026-01-01T17:00:00",
+            "starttijd": "14:00",
             "organisatie": "SOCH",
             "locatie": "Clubhuis Wilgendaal",
             "opmerking": "Wedstrijd + receptie + toespraak"
@@ -85,6 +95,7 @@
             "title": "ALV VIP",
             "start": "2026-02-03T19:45:00",
             "end": "2026-02-03T22:00:00",
+            "starttijd": "19:45",
             "organisatie": "VIP",
             "locatie": "Clubhuis 't Wooike",
             "opmerking": ""
@@ -93,6 +104,7 @@
             "title": "Pauzeplaats Wandeltweedaagse",
             "start": "2026-08-19T20:00:00",
             "end": "2026-08-19T22:00:00",
+            "starttijd": "20:00",
             "organisatie": "Extern",
             "locatie": "Clubhuis Wilgendaal",
             "opmerking": "Nadere info volgt"
@@ -101,6 +113,7 @@
             "title": "Test",
             "start": "2026-09-12T12:00:00",
             "end": "2026-09-12T16:00:00",
+            "starttijd": "12:00",
             "organisatie": "Extern",
             "locatie": "Clubhuis Wilgendaal",
             "opmerking": "Test"
@@ -109,6 +122,7 @@
             "title": "Vrijwilligersdag Herpinia",
             "start": "2026-09-12T16:00:00",
             "end": "2026-09-12T23:00:00",
+            "starttijd": "16:00",
             "organisatie": "Herpinia",
             "locatie": "Clubhuis Wilgendaal",
             "opmerking": "Thema Oktoberfest"
@@ -117,6 +131,7 @@
             "title": "Sponsoravond Herpinia",
             "start": "2026-09-18T20:00:00",
             "end": "2026-09-18T23:59:00",
+            "starttijd": "20:00",
             "organisatie": "Herpinia",
             "locatie": "Clubhuis Wilgendaal",
             "opmerking": "Uitgesteld wegens verbouwing"
@@ -125,6 +140,7 @@
             "title": "Doortrappen Fietsfestival",
             "start": "2026-09-29T09:00:00",
             "end": "2026-09-29T17:00:00",
+            "starttijd": "09:00",
             "organisatie": "Extern",
             "locatie": "Clubhuis Wilgendaal",
             "opmerking": ""
@@ -133,6 +149,7 @@
             "title": "Sponsoravond VIP",
             "start": "2026-10-08T19:30:00",
             "end": "2026-10-08T23:59:00",
+            "starttijd": "19:30",
             "organisatie": "VIP",
             "locatie": "Clubhuis Wilgendaal",
             "opmerking": ""
@@ -141,6 +158,7 @@
             "title": "Mountainbiketocht Coppie",
             "start": "2026-10-11T07:30:00",
             "end": "2026-10-11T15:00:00",
+            "starttijd": "07:30",
             "organisatie": "Extern",
             "locatie": "Clubhuis Wilgendaal",
             "opmerking": "Normaal ca. 350 deelnemers"
@@ -149,6 +167,7 @@
             "title": "Algemene Ledenvergadering",
             "start": "2026-10-27T20:30:00",
             "end": "2026-10-27T22:30:00",
+            "starttijd": "20:30",
             "organisatie": "Herpinia",
             "locatie": "Clubhuis",
             "opmerking": ""
@@ -157,6 +176,7 @@
             "title": "Feestavond VIP",
             "start": "2026-11-07T19:30:00",
             "end": "2026-11-07T23:59:00",
+            "starttijd": "19:30",
             "organisatie": "VIP",
             "locatie": "Clubhuis Wilgendaal",
             "opmerking": ""
