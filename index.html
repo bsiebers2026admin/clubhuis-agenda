@@ -218,7 +218,7 @@
     width:100%;
     height:100%;
 
-    z-index:0;
+    z-index:5;
 
 }
 
@@ -253,13 +253,13 @@
 
 }
 
-.fc-daygrid-day-top,
-.fc-daygrid-day-events {
-
+.fc-daygrid-day-top {
     position: relative;
+    z-index: 10;
+}
 
-    z-index: 2;
-
+.fc-daygrid-day-events {
+    display: none !important;
 }
 
 .fc-event-main {
@@ -570,7 +570,9 @@ function paintDays() {
                 block.style.cursor =
                 'pointer';
 
-                block.onclick = () => {
+                block.onclick = function(eventClick) {
+
+                    eventClick.stopPropagation();
 
                     show({
                         title: event.title,
@@ -578,6 +580,7 @@ function paintDays() {
                     });
 
                 };
+
 
 
                 block.style.top =
