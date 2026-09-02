@@ -5,6 +5,44 @@ import requests
 import pandas as pd
 from datetime import datetime
 
+import subprocess
+
+
+def publish_to_github():
+
+    result = subprocess.run(
+        ["git", "status", "--porcelain"],
+        capture_output=True,
+        text=True
+    )
+
+    if result.stdout.strip():
+
+        print("events.json gewijzigd")
+
+        subprocess.run(
+            ["git", "add", "."]
+        )
+
+        subprocess.run(
+            [
+                "git",
+                "commit",
+                "-m",
+                "Automatische agenda update"
+            ]
+        )
+
+        subprocess.run(
+            ["git", "push"]
+        )
+
+        print("GitHub bijgewerkt")
+
+    else:
+
+        print("Geen wijzigingen gevonden")
+
 
 ## Make Connection
 
@@ -154,6 +192,8 @@ for _, row in df.iterrows():
         "title": row["Activiteit"],
         "start": start,
         "end": end,
+        "starttijd": row["Starttijd"].strftime('%H:%M'),
+        "eindtijd": row["Eindtijd"].strftime('%H:%M'),
         "organisatie": row["Organisatie"],
         "locatie": row["Locatie"],
         "opmerking": "" if pd.isna(row["Opmerking"]) else row["Opmerking"]
@@ -180,4 +220,9 @@ with open(
         ensure_ascii=False
     )
 print("events.json aangemaakt")
-print(f"{len(events)} events geëxporteerd")
+print(
+    f"{len(events)} events exported"
+)
+
+
+publish_to_github()
