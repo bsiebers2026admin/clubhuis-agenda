@@ -121,6 +121,20 @@
 
 }
 
+    .details-panel h3 {
+
+    margin-top: 0;
+
+    color: #003366;
+
+}
+
+.details-panel strong {
+
+    color: #003366;
+
+}
+
     .search {
         width: 100%;
         padding: 10px;
@@ -198,35 +212,7 @@
 
 }
 
-.fc-daygrid-event {
 
-    white-space: normal !important;
-
-    overflow: visible !important;
-
-    text-overflow: unset !important;
-
-    word-break: break-word;
-
-    line-height: 1.1;
-
-}
-
-.fc-event-title {
-
-    white-space: normal !important;
-
-    overflow: visible !important;
-
-    text-overflow: unset !important;
-
-    word-break: break-word;
-
-    font-size: 11px;
-
-    line-height: 1.1;
-
-}
 
     .today-box {
         outline: 2px solid #0066cc
@@ -247,21 +233,7 @@
         border-radius: 12px
     }
 
-    @media (max-width: 1100px) {
-        .header-grid{
-            grid-template-columns:
-                1.8fr 1fr 300px;
-        }
-
-        .content {
-            flex-direction: column
-        }
-
-        .sidebar {
-            width: 100%
-        }
-
-        .fc-daygrid-event {
+            .fc-daygrid-event {
 
     white-space: normal !important;
 
@@ -290,6 +262,22 @@
     line-height: 1.1;
 
 }
+
+    @media (max-width: 1100px) {
+        .header-grid{
+            grid-template-columns:
+                1.8fr 1fr 300px;
+        }
+
+        .content {
+            flex-direction: column
+        }
+
+        .sidebar {
+            width: 100%
+        }
+
+
 
 
 
@@ -392,8 +380,10 @@ function show(e) {
         <h3>${e.title}</h3>
 
         <p>
-            <strong>Start</strong><br>
+            <strong>Tijd</strong><br>
             ${e.extendedProps.starttijd || ''}
+            -
+            ${e.extendedProps.eindtijd || ''}
         </p>
 
         <p>
@@ -538,76 +528,138 @@ function paintDays() {
 
 
 
-
-
 function updateSidebar(start, end) {
-    monthLabel.innerText = cal.view.title;
+
+    monthLabel.innerText =
+        cal.view.title;
+
     eventList.innerHTML = '';
-    let term = (search.value || '').toLowerCase();
-    events.filter(e => filters().includes(e.organisatie)).forEach(e => {
-        let d = new Date(e.start);
-        if (d >= start && d < end && e.title.toLowerCase().includes(term)) {
-            let c = document.createElement('div');
-            c.className = 'event-card ' + (e.organisatie || 'extern').toLowerCase();
 
-            const month =
-    d.toLocaleDateString(
-        'nl-NL',
-        {
-            month:'short'
-        }
-    ).toUpperCase();
+    let term =
+        (search.value || '')
+        .toLowerCase();
 
-c.innerHTML = `
-    <div
-        style="
-        font-size:11px;
-        color:#666;
-        font-weight:bold;
-        ">
+    events
+        .filter(
+            e =>
+                filters().includes(
+                    e.organisatie
+                )
+        )
+        .forEach(e => {
 
-        ${d.getDate()} ${month}
+            let d =
+                new Date(e.start);
 
-    </div>
+            console.log(
+    "TITLE:",
+    e.title,
+    typeof e.title
+);
 
-    <div
-        style="
-        font-size:12px;
-        color:#444;
-        ">
+            if (
+                d >= start &&
+                d < end &&
+                String(
+                    e.title || ''
+                )
+                .toLowerCase()
+                .includes(term)
+            ) {
 
-        ${e.starttijd || ''}
+                let c =
+                    document
+                    .createElement('div');
 
-    </div>
+                c.className =
+                    'event-card ' +
+                    (
+                        e.organisatie ||
+                        'extern'
+                    )
+                    .toLowerCase();
 
-    <div
-        style="
-        font-weight:bold;
-        margin-top:4px;
-        ">
+                const month =
+                    d
+                    .toLocaleDateString(
+                        'nl-NL',
+                        {
+                            month: 'short'
+                        }
+                    )
+                    .toUpperCase();
 
-        ${e.title}
+                c.innerHTML = `
 
-    </div>
+                    <div
+                        style="
+                            font-size:11px;
+                            color:#666;
+                            font-weight:bold;
+                        ">
 
-    <div
-        style="
-        font-size:12px;
-        color:#666;
-        ">
+                        ${d.getDate()} ${month}
 
-        ${e.locatie || ''}
+                    </div>
 
-    </div>
-`;
+                    <div
+                        style="
+                            font-size:12px;
+                            color:#444;
+                        ">
 
-            c.onclick = () => show({title: e.title, extendedProps: e});
-            eventList.appendChild(c)
-        }
-    })
+                        ${e.starttijd || ''}
+
+                    </div>
+
+                    <div
+                        style="
+                            font-weight:bold;
+                            margin-top:4px;
+                        ">
+
+                        ${e.title}
+
+                    </div>
+
+                    <div
+                        style="
+                            font-size:12px;
+                            color:#666;
+                        ">
+
+                        ${e.locatie || ''}
+
+                    </div>
+
+                `;
+
+                c.onclick = () => {
+
+                    show({
+                        title: e.title,
+                        extendedProps: e
+                    });
+
+                    cal.gotoDate(
+                        e.start
+                    );
+
+                };
+
+                eventList.appendChild(c);
+
+            }
+
+        });
+
 }
 
-fetch('events.json').then(r => r.json()).then(data => {
+
+
+fetch('events.json?t=' + Date.now())
+    .then(r => r.json())
+    .then(data => {
     events = data.events || data;
     if (data.last_updated) lastUpdated.innerText = data.last_updated;
     events.forEach(e => e.color = colors[e.organisatie] || '#777');
@@ -620,29 +672,30 @@ fetch('events.json').then(r => r.json()).then(data => {
 
 
         initialView: 'dayGridMonth',
-        headerToolbar: {left: 'prev,next today', center: 'title', right: 'dayGridMonth,timeGridWeek,listMonth'},
+        headerToolbar: {left: 'prev,next myToday', center: 'title', right: 'dayGridMonth,timeGridWeek,listMonth'},
         buttonText: {today: 'Vandaag', month: 'Maand', week: 'Week', list: 'Agenda'},
 
         customButtons: {
-    myToday: {
-        text: 'Vandaag',
-        click: function() {
+        myToday: {
+            text: 'Vandaag',
+            click: function() {
 
-            cal.today();
+                cal.today();
 
-            updateSidebar(
-                cal.view.activeStart,
-                cal.view.activeEnd
-            );
+                setTimeout(function () {
 
-            setTimeout(
-                paintDays,
-                50
-            );
+                    updateSidebar(
+                        cal.view.activeStart,
+                        cal.view.activeEnd
+                    );
 
+                    paintDays();
+
+                }, 50);
+
+            }
         }
-    }
-},
+    },
 
 
 
@@ -659,11 +712,110 @@ fetch('events.json').then(r => r.json()).then(data => {
     cal.render();
     updateSidebar(cal.view.activeStart, cal.view.activeEnd);
     paintDays();
-    document.querySelectorAll('.org-filter').forEach(x => x.addEventListener('change', () => {
-        cal.refetchEvents();
-        updateSidebar(cal.view.activeStart, cal.view.activeEnd);
-        setTimeout(paintDays, 50)
-    }));
+
+    setInterval(() => {
+
+    fetch(
+        'events.json?t=' + Date.now(),
+        {
+            cache: 'no-store'
+        }
+    )
+    .then(r => r.json())
+.then(data => {
+
+    console.log(
+        "REFRESH",
+        data.last_updated
+    );
+
+events = data.events || data;
+
+events.forEach(e => {
+
+    e.color =
+        colors[e.organisatie]
+        || '#777';
+
+});
+
+if (data.last_updated) {
+    lastUpdated.innerText =
+        data.last_updated;
+}
+
+events = data.events || data;
+
+events.forEach(e => {
+
+    e.color =
+        colors[e.organisatie]
+        || '#777';
+
+});
+
+if (data.last_updated) {
+    lastUpdated.innerText =
+        data.last_updated;
+}
+
+cal.removeAllEvents();
+
+events
+    .filter(
+        e =>
+            filters().includes(
+                e.organisatie
+            )
+    )
+    .forEach(
+        e => cal.addEvent(e)
+    );
+
+updateSidebar(
+    cal.view.activeStart,
+    cal.view.activeEnd
+);
+
+setTimeout(
+    paintDays,
+    50
+);
+
+})
+    .catch(err => {
+        console.error(
+            'Refresh mislukt',
+            err
+        );
+    });
+
+}, 30000);
+document.querySelectorAll('.org-filter').forEach(x => x.addEventListener('change', () => {
+
+    cal.removeAllEvents();
+
+    events
+        .filter(
+            e => filters().includes(
+                e.organisatie
+            )
+        )
+        .forEach(
+            e => cal.addEvent(e)
+        );
+
+    updateSidebar(
+        cal.view.activeStart,
+        cal.view.activeEnd
+    );
+
+    setTimeout(
+        paintDays,
+        50
+    );
+
+}));
     search.addEventListener('input', () => updateSidebar(cal.view.activeStart, cal.view.activeEnd));
 
 
