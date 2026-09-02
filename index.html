@@ -148,6 +148,35 @@
         margin-bottom: 10px
     }
 
+    .time-block.overlap {
+
+    background: #ff0000 !important;
+
+    color: white !important;
+
+}
+
+    .time-block {
+
+    position: absolute;
+
+    left: 0;
+
+    width: 100%;
+
+    overflow: hidden;
+
+    padding-left: 2px;
+
+    font-size: 9px;
+
+    border-top: 1px solid rgba(0,0,0,.15);
+
+}
+
+
+
+
     .event-card {
         padding: 10px;
         margin-bottom: 8px;
@@ -232,6 +261,10 @@
 
     white-space: pre-line !important;
 
+}
+
+.fc-daygrid-event-harness {
+    display: none !important;
 }
 
 
@@ -504,17 +537,43 @@ function paintDays() {
                     end.getHours() +
                     (end.getMinutes() / 60);
 
+                const DAY_START = 8;
+                const DAY_END = 24;
+
                 const top =
-                    (startHours / 24) * 100;
+                    (
+                        (startHours - DAY_START)
+                        /
+                        (DAY_END - DAY_START)
+                    ) * 100;
 
                 const height =
-                    ((endHours - startHours) / 24) * 100;
+                    (
+                        (endHours - startHours)
+                        /
+                        (DAY_END - DAY_START)
+                    ) * 100;
+
+
 
                 const block =
                     document.createElement('div');
 
                 block.className =
                     'time-block';
+
+                block.style.cursor =
+                'pointer';
+
+            block.onclick = () => {
+
+                show({
+                    title: event.title,
+                    extendedProps: event
+                });
+
+            };
+
 
                 block.style.top =
                     top + '%';
@@ -527,8 +586,16 @@ function paintDays() {
                         event.organisatie
                     ] + '55';
 
-                block.innerText =
-                    event.title;
+                block.innerHTML = `
+                    <div style="font-size:9px;">
+                        ${event.starttijd}
+                    </div>
+
+                    <div>
+                        ${event.title}
+                    </div>
+                `;
+
 
                 dayEvents.forEach(other => {
 
