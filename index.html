@@ -448,10 +448,11 @@ function paintDays() {
                 )
             ){
 
-                grouped[date]
-                    .push(
-                        e.organisatie
-                    );
+                grouped[date].push({
+                    organisatie: e.organisatie,
+                    start: e.start,
+                    end: e.end
+                });
 
             }
 
@@ -471,8 +472,7 @@ function paintDays() {
             if(!grouped[date]){
                 return;
             }
-
-            const orgs =
+            const items =
                 grouped[date];
 
             const overlay =
@@ -481,25 +481,38 @@ function paintDays() {
             overlay.className =
                 'occupation-overlay';
 
-            if(orgs.length === 1){
+            let segments = [];
 
-                overlay.style.background =
-                    colors[orgs[0]] + '33';
+            items.forEach(item => {
 
-            }
+                const startHour =
+                    new Date(item.start).getHours();
 
-            if(orgs.length === 2){
+                const endHour =
+                    new Date(item.end).getHours();
 
-                overlay.style.background =
-                    `linear-gradient(
-                        to bottom,
-                        ${colors[orgs[0]]}33 0%,
-                        ${colors[orgs[0]]}33 50%,
-                        ${colors[orgs[1]]}33 50%,
-                        ${colors[orgs[1]]}33 100%
-                    )`;
+                const startPercent =
+                    (startHour / 24) * 100;
 
-            }
+                const endPercent =
+                    (endHour / 24) * 100;
+
+                segments.push(
+                    `${colors[item.organisatie]}33 ${startPercent}%`
+                );
+
+                segments.push(
+                    `${colors[item.organisatie]}33 ${endPercent}%`
+                );
+
+            });
+
+            overlay.style.background =
+                `linear-gradient(
+                    to right,
+                    ${segments.join(',')}
+                )`;
+
 
             if(orgs.length === 3){
 
