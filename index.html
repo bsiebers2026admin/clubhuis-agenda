@@ -442,11 +442,12 @@ function paintDays() {
                 grouped[date] || [];
 
             if(
-                !grouped[date]
-                .includes(
-                    e.organisatie
+                !grouped[date].some(
+                    x => x.organisatie === e.organisatie
                 )
-            ){
+            )
+
+            {
 
                 grouped[date].push({
                     organisatie: e.organisatie,
@@ -513,21 +514,6 @@ function paintDays() {
                     ${segments.join(',')}
                 )`;
 
-
-            if(orgs.length === 3){
-
-                overlay.style.background =
-                    `linear-gradient(
-                        to bottom,
-                        ${colors[orgs[0]]}33 0%,
-                        ${colors[orgs[0]]}33 33%,
-                        ${colors[orgs[1]]}33 33%,
-                        ${colors[orgs[1]]}33 66%,
-                        ${colors[orgs[2]]}33 66%,
-                        ${colors[orgs[2]]}33 100%
-                    )`;
-
-            }
 
             cell.appendChild(
                 overlay
