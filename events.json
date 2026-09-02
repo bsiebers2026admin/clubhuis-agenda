@@ -1,5 +1,5 @@
 {
-    "last_updated": "02-09-2026 23:34",
+    "last_updated": "02-09-2026 23:37",
     "events": [
         {
             "title": "Bestuur SOCH + adviseur",
@@ -123,8 +123,8 @@
         },
         {
             "title": "Test Overlap Deel 1",
-            "start": "2026-09-12T12:00:00",
-            "end": "2026-09-12T18:00:00",
+            "start": "2026-09-11T12:00:00",
+            "end": "2026-09-11T18:00:00",
             "starttijd": "12:00",
             "eindtijd": "18:00",
             "organisatie": "Extern",
@@ -133,8 +133,8 @@
         },
         {
             "title": "Test Overlap Deel 2",
-            "start": "2026-09-12T16:00:00",
-            "end": "2026-09-12T23:00:00",
+            "start": "2026-09-11T16:00:00",
+            "end": "2026-09-11T23:00:00",
             "starttijd": "16:00",
             "eindtijd": "23:00",
             "organisatie": "Herpinia",
