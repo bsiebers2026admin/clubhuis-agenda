@@ -201,7 +201,7 @@
     }
 
     .fc-daygrid-day {
-        height: 55px !important
+        height: 85px !important
     }
 
     .fc-daygrid-day {
@@ -586,8 +586,11 @@ function paintDays() {
                 block.style.top =
                     top + '%';
 
+                block.style.minHeight = '18px';
+
                 block.style.height =
                     height + '%';
+
 
                 block.style.background =
                     colors[
