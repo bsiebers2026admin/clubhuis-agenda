@@ -1,5 +1,5 @@
 {
-    "last_updated": "02-09-2026 23:25",
+    "last_updated": "02-09-2026 23:29",
     "events": [
         {
             "title": "Bestuur SOCH + adviseur",
@@ -122,34 +122,14 @@
             "opmerking": "Nadere info volgt"
         },
         {
-            "title": "Test_BAS3",
-            "start": "2026-09-10T12:00:00",
-            "end": "2026-09-10T16:00:00",
-            "starttijd": "12:00",
-            "eindtijd": "16:00",
-            "organisatie": "Extern",
-            "locatie": "Clubhuis Wilgendaal",
-            "opmerking": "Test"
-        },
-        {
-            "title": 4,
+            "title": "Test Overlap Bas",
             "start": "2026-09-12T12:00:00",
-            "end": "2026-09-12T16:00:00",
+            "end": "2026-09-12T18:00:00",
             "starttijd": "12:00",
-            "eindtijd": "16:00",
+            "eindtijd": "18:00",
             "organisatie": "Extern",
             "locatie": "Clubhuis Wilgendaal",
-            "opmerking": "Test"
-        },
-        {
-            "title": 5,
-            "start": "2026-09-13T12:00:00",
-            "end": "2026-09-13T16:00:00",
-            "starttijd": "12:00",
-            "eindtijd": "16:00",
-            "organisatie": "Extern",
-            "locatie": "Clubhuis Wilgendaal",
-            "opmerking": "Test"
+            "opmerking": "Test Overlap Bas"
         },
         {
             "title": "Vrijwilligersdag Herpinia",
