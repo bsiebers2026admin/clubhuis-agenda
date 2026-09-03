@@ -365,6 +365,30 @@ body {
         width: 100%;
     }
 
+    .logo-container {
+
+    order: -1;
+
+    text-align: center;
+
+    margin-bottom: 10px;
+
+}
+
+.header-grid {
+
+    grid-template-columns: 1fr;
+
+}
+
+.logo {
+
+    max-width: 300px;
+
+    max-height: 100px;
+
+}
+
 }
 
 
@@ -406,8 +430,15 @@ body {
 
             </div>
 
+        <div class="logo-container">
+    <img src="Logo_SOCH.jpg"
+         class="logo"
+         onerror="this.style.display='none'">
+</div>
 
-        <div style="text-align:right"><img src="Logo_SOCH.jpg" class="logo" onerror="this.style.display='none'"></div>
+
+
+
     </div>
     <div class="filters"><label class="pill soch-bg"><input type="checkbox" class="org-filter" value="SOCH" checked>
         SOCH</label><label class="pill herpinia-bg"><input type="checkbox" class="org-filter" value="Herpinia" checked>
