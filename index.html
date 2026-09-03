@@ -337,6 +337,13 @@ body {
 
     margin-left: -300px;
 
+
+
+}
+
+
+.reserve-mobile {
+    display: none;
 }
 
     @media (max-width: 1100px) {
@@ -391,19 +398,11 @@ body {
         max-height: 130px;
 
     }
-.reserve-container {
 
-    display: flex !important;
-
-    flex-direction: column;
-
-    align-items: flex-start;
-
-    margin-left: 0 !important;
-
-    margin-top: 5px;
-
+    .reserve-container {
+    display: none;
 }
+
 
     .filters {
 
@@ -428,6 +427,17 @@ body {
             <div>Bekijk alle geplande activiteiten van het clubhuis.</div>
             <div class="update">Laatst bijgewerkt: <span id="lastUpdated">...</span></div>
         </div>
+
+        <div class="reserve-mobile">
+
+    <a class="reserve-button"
+       target="_blank"
+       href="https://sportparkherpen.sharepoint.com/:x:/r/sites/ClubhuisAgenda/_layouts/15/Doc.aspx?sourcedoc=%7B3D9803F5-C271-4476-995E-E5F87AA93C13%7D&file=ClubhuisAgenda.xlsx&action=default&mobileredirect=true">
+        Ruimte reserveren
+    </a>
+
+</div>
+
 <div class="reserve-container">
 
 
