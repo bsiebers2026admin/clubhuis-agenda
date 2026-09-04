@@ -370,70 +370,21 @@ body {
 
 @media (max-width: 940px) {
 
+    .header-grid {
 
-    /* Header: tekst links, logo rechts */
-
-.header-grid {
-
-    display: flex;
-
-    flex-direction: column;
-
-    align-items: flex-start;
-
-}
-
-    /* Kalender boven, dan details, dan sidebar */
-
-    .content {
+        display: flex;
 
         flex-direction: column;
 
-    }
-
-    .calendar-wrap {
-
-        order: 1;
+        align-items: flex-start;
 
     }
 
-    .details-panel {
+    .logo-container {
 
-        order: 2;
-
-        width: 100%;
-
-        min-width: 100%;
+        display: none;
 
     }
-
-    .sidebar {
-
-        order: 3;
-
-        width: 100%;
-
-    }
-
-
-.logo-container {
-    display: none;
-}
-.reserve-container {
-
-    grid-row: 2;
-
-}
-
-    .logo {
-
-        max-width: 320px;
-
-        max-height: 120px;
-
-    }
-
-    /* Reservering weer tonen */
 
     .reserve-container {
 
@@ -449,8 +400,6 @@ body {
 
     }
 
-    /* Filters links */
-
     .filters {
 
         justify-content: flex-start;
@@ -460,8 +409,6 @@ body {
     }
 
 }
-
-
 
 
 
