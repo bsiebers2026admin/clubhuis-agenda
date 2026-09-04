@@ -358,15 +358,18 @@ body {
 
     }
 
-    .reserve-container {
+.reserve-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+    margin-left: -300px;
+}
 
-        margin-left: 0 !important;
-
-        justify-self: end;
-
-        align-items: flex-end;
-
-    }
+.reserve-note {
+    font-size: 11px;
+    color: #999;
+}
 
     .filters {
 
@@ -428,20 +431,19 @@ body {
 
 
 
-            <a class="reserve-button"
+<a class="reserve-button"
    href="https://sportparkherpen.sharepoint.com/:x:/s/ClubhuisAgenda/IQD1A5g9ccJ2RJle5fh6qTwTAYKijyWH19KcMC8VMEg4Rn4?e=OiIl0F"
    target="_blank">
     Ruimte reserveren
 </a>
 
-            <div style="
-                margin-top:6px;
-                font-size:11px;
-                color:#999;
-            ">
-                Reserveren vereist een OpenClubHerpen-account
-            </div>
-
+<div style="
+    margin-top:6px;
+    font-size:11px;
+    color:#999;
+">
+    Reserveren vereist een OpenClubHerpen-account
+</div>
         </div>
 
                 <div class="logo-container">
