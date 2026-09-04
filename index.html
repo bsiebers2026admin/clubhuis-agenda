@@ -380,17 +380,15 @@ body {
 
     /* Header: tekst links, logo rechts */
 
-    .header-grid {
+.header-grid {
 
-        display: grid;
+    display: flex;
 
-        grid-template-columns: 1fr 280px;
+    flex-direction: column;
 
-        gap: 20px;
+    align-items: flex-start;
 
-        align-items: start;
-
-    }
+}
 
     /* Kalender boven, dan details, dan sidebar */
 
@@ -427,11 +425,11 @@ body {
 
 .logo-container {
 
-    position: absolute;
+    grid-column: 1 / -1;
 
-    top: 15px;
+    text-align: left;
 
-    left: 20px;
+    margin-bottom: 15px;
 
 }
 .reserve-container {
