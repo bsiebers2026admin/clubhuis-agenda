@@ -346,6 +346,8 @@ body {
     display: none;
 }
 
+
+
     @media (max-width: 1100px) {
         .header-grid {
             grid-template-columns:
@@ -378,9 +380,17 @@ body {
 
     }
 
-        .header-grid {
-        grid-template-columns: 1fr;
-    }
+.header-grid {
+
+    display: grid;
+
+    grid-template-columns: 320px 1fr;
+
+    align-items: start;
+
+    gap: 20px;
+
+}
 
     .logo-container {
 
@@ -393,9 +403,9 @@ body {
 
     .logo {
 
-        max-width: 400px;
+        max-width: 300px;
 
-        max-height: 130px;
+        max-height: 110px;
 
     }
 
@@ -413,12 +423,20 @@ body {
 
 }
 
+    .reserve-note {
+
+    margin-top: 6px;
+
+    font-size: 11px;
+
+    color: #999;
+
+}
+
 
 .filters {
 
-    display: flex;
-
-    justify-content: flex-end;
+    justify-content: flex-start;
 
     margin-top: 10px;
 
@@ -449,6 +467,11 @@ body {
        href="https://sportparkherpen.sharepoint.com/:x:/r/sites/ClubhuisAgenda/_layouts/15/Doc.aspx?sourcedoc=%7B3D9803F5-C271-4476-995E-E5F87AA93C13%7D&file=ClubhuisAgenda.xlsx&action=default&mobileredirect=true">
         Ruimte reserveren
     </a>
+
+            <div class="reserve-note">
+Reserveren vereist een OpenClubHerpen-account
+
+</div>
 
 </div>
 
