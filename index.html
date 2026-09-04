@@ -370,7 +370,13 @@ body {
 
 @media (max-width: 940px) {
 
-    /* Header */
+    .logo-container {
+        display: none;
+    }
+
+    .reserve-mobile {
+        display: none;
+    }
 
     .header-grid {
 
@@ -384,41 +390,21 @@ body {
 
     }
 
-    /* Logo niet tonen in iframe */
-
-    .logo-container {
-
-        display: none;
-
-    }
-
-    /* Reserveren rechts */
-
     .reserve-container {
 
-        display: flex;
-
-        flex-direction: column;
-
-        align-items: flex-end;
+        margin-left: 0 !important;
 
         justify-self: end;
 
-        margin: 0 !important;
+        align-items: flex-end;
 
     }
 
-    /* Filters links */
-
     .filters {
-
-        justify-content: flex-start;
 
         margin-top: 10px;
 
     }
-
-    /* Kalender boven */
 
     .content {
 
@@ -429,33 +415,22 @@ body {
     }
 
     .calendar-wrap {
-
         order: 1;
-
-        width: 100%;
-
     }
-
-    /* Details daarna */
 
     .details-panel {
 
         order: 2;
 
         width: 100%;
-
         min-width: 100%;
-
     }
-
-    /* Activiteitenlijst onderaan */
 
     .sidebar {
 
         order: 3;
 
         width: 100%;
-
     }
 
 }
