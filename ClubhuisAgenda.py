@@ -224,5 +224,4 @@ print(
     f"{len(events)} events exported"
 )
 
-
 publish_to_github()
