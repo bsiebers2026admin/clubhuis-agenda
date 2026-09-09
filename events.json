@@ -1,5 +1,5 @@
 {
-    "last_updated": "09-09-2026 23:45",
+    "last_updated": "09-09-2026 23:50",
     "events": [
         {
             "title": "Bestuur SOCH + adviseur",
@@ -632,12 +632,32 @@
             "opmerking": ""
         },
         {
+            "title": "Competitie Tennis en padel",
+            "start": "2026-11-13T19:00:00",
+            "end": "2026-11-13T23:59:00",
+            "starttijd": "19:00",
+            "eindtijd": "23:59",
+            "organisatie": "VIP",
+            "locatie": "Clubhuis Wilgendaal",
+            "opmerking": ""
+        },
+        {
             "title": "Damestoernooi Herpinia",
             "start": "2026-11-13T19:30:00",
             "end": "2026-11-13T23:59:00",
             "starttijd": "19:30",
             "eindtijd": "23:59",
             "organisatie": "Herpinia",
+            "locatie": "Clubhuis Wilgendaal",
+            "opmerking": ""
+        },
+        {
+            "title": "Competitie Tennis en padel",
+            "start": "2026-11-27T19:00:00",
+            "end": "2026-11-27T23:59:00",
+            "starttijd": "19:00",
+            "eindtijd": "23:59",
+            "organisatie": "VIP",
             "locatie": "Clubhuis Wilgendaal",
             "opmerking": ""
         },
@@ -667,6 +687,16 @@
             "end": "2026-12-08T23:00:00",
             "starttijd": "20:30",
             "eindtijd": "23:00",
+            "organisatie": "VIP",
+            "locatie": "Clubhuis Wilgendaal",
+            "opmerking": ""
+        },
+        {
+            "title": "Competitie Tennis en padel",
+            "start": "2026-12-11T19:00:00",
+            "end": "2026-12-11T23:59:00",
+            "starttijd": "19:00",
+            "eindtijd": "23:59",
             "organisatie": "VIP",
             "locatie": "Clubhuis Wilgendaal",
             "opmerking": ""
