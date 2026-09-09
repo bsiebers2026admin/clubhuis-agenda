@@ -1,5 +1,5 @@
 {
-    "last_updated": "09-09-2026 23:35",
+    "last_updated": "09-09-2026 23:40",
     "events": [
         {
             "title": "Bestuur SOCH + adviseur",
@@ -182,14 +182,14 @@
             "opmerking": ""
         },
         {
-            "title": "Test Overlap Deel 1",
-            "start": "2026-09-11T12:00:00",
-            "end": "2026-09-11T18:00:00",
-            "starttijd": "12:00",
-            "eindtijd": "18:00",
-            "organisatie": "Extern",
+            "title": "Competitie Tennis",
+            "start": "2026-09-11T19:00:00",
+            "end": "2026-09-11T23:59:00",
+            "starttijd": "19:00",
+            "eindtijd": "23:59",
+            "organisatie": "VIP",
             "locatie": "Clubhuis Wilgendaal",
-            "opmerking": "Test Overlap Deel 1"
+            "opmerking": ""
         },
         {
             "title": "Test Overlap Deel 2",
@@ -232,6 +232,26 @@
             "opmerking": ""
         },
         {
+            "title": "Competitie Tennis",
+            "start": "2026-09-17T19:00:00",
+            "end": "2026-09-17T23:59:00",
+            "starttijd": "19:00",
+            "eindtijd": "23:59",
+            "organisatie": "VIP",
+            "locatie": "Clubhuis Wilgendaal",
+            "opmerking": ""
+        },
+        {
+            "title": "Competitie Tennis en padel",
+            "start": "2026-09-18T19:00:00",
+            "end": "2026-09-18T23:59:00",
+            "starttijd": "19:00",
+            "eindtijd": "23:59",
+            "organisatie": "VIP",
+            "locatie": "Clubhuis Wilgendaal",
+            "opmerking": ""
+        },
+        {
             "title": "Sponsoravond Herpinia",
             "start": "2026-09-18T20:00:00",
             "end": "2026-09-18T23:59:00",
@@ -260,6 +280,16 @@
             "organisatie": "Herpinia",
             "locatie": "Clubhuis Wilgendaal",
             "opmerking": "Seniorenteams in A- en B-categorie"
+        },
+        {
+            "title": "Competitie Tennis",
+            "start": "2026-09-24T19:00:00",
+            "end": "2026-09-24T23:59:00",
+            "starttijd": "19:00",
+            "eindtijd": "23:59",
+            "organisatie": "VIP",
+            "locatie": "Clubhuis Wilgendaal",
+            "opmerking": ""
         },
         {
             "title": "Toernooi VIP",
