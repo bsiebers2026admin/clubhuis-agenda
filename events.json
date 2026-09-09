@@ -1,5 +1,5 @@
 {
-    "last_updated": "09-09-2026 12:25",
+    "last_updated": "09-09-2026 12:35",
     "events": [
         {
             "title": "Bestuur SOCH + adviseur",
@@ -220,6 +220,16 @@
             "organisatie": "Herpinia",
             "locatie": "Clubhuis Wilgendaal",
             "opmerking": "Thema Oktoberfest"
+        },
+        {
+            "title": "Husselen Tennis en Padel",
+            "start": "2026-09-12T09:30:00",
+            "end": "2026-09-12T12:00:00",
+            "starttijd": "09:30",
+            "eindtijd": "12:00",
+            "organisatie": "VIP",
+            "locatie": "Sportpark/Clubhuis Wilgendaal",
+            "opmerking": ""
         },
         {
             "title": "Sponsoravond Herpinia",
