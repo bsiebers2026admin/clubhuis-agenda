@@ -1,5 +1,5 @@
 {
-    "last_updated": "09-09-2026 23:20",
+    "last_updated": "09-09-2026 23:25",
     "events": [
         {
             "title": "Bestuur SOCH + adviseur",
@@ -262,12 +262,32 @@
             "opmerking": "Seniorenteams in A- en B-categorie"
         },
         {
+            "title": "Toernooi VIP",
+            "start": "2026-09-28T18:00:00",
+            "end": "2026-09-28T23:59:00",
+            "starttijd": "18:00",
+            "eindtijd": "23:59",
+            "organisatie": "VIP",
+            "locatie": "Clubhuis Wilgendaal",
+            "opmerking": ""
+        },
+        {
             "title": "Doortrappen Fietsfestival",
             "start": "2026-09-29T09:00:00",
             "end": "2026-09-29T17:00:00",
             "starttijd": "09:00",
             "eindtijd": "17:00",
             "organisatie": "Extern",
+            "locatie": "Clubhuis Wilgendaal",
+            "opmerking": "twee tijdsblokken: van 09.30 tot 12.45 uur of van 13.00 tot 16.15 uur"
+        },
+        {
+            "title": "Toernooi VIP",
+            "start": "2026-09-29T18:00:00",
+            "end": "2026-09-29T23:59:00",
+            "starttijd": "18:00",
+            "eindtijd": "23:59",
+            "organisatie": "VIP",
             "locatie": "Clubhuis Wilgendaal",
             "opmerking": ""
         },
@@ -283,9 +303,19 @@
         },
         {
             "title": "Toernooi VIP",
-            "start": "2026-09-30T19:30:00",
+            "start": "2026-09-30T18:00:00",
             "end": "2026-09-30T23:59:00",
-            "starttijd": "19:30",
+            "starttijd": "18:00",
+            "eindtijd": "23:59",
+            "organisatie": "VIP",
+            "locatie": "Clubhuis Wilgendaal",
+            "opmerking": ""
+        },
+        {
+            "title": "Toernooi VIP",
+            "start": "2026-10-01T18:00:00",
+            "end": "2026-10-01T23:59:00",
+            "starttijd": "18:00",
             "eindtijd": "23:59",
             "organisatie": "VIP",
             "locatie": "Clubhuis Wilgendaal",
@@ -298,6 +328,16 @@
             "starttijd": "09:00",
             "eindtijd": "23:59",
             "organisatie": "Herpinia",
+            "locatie": "Clubhuis Wilgendaal",
+            "opmerking": ""
+        },
+        {
+            "title": "Toernooi VIP",
+            "start": "2026-10-02T18:00:00",
+            "end": "2026-10-02T23:59:00",
+            "starttijd": "18:00",
+            "eindtijd": "23:59",
+            "organisatie": "VIP",
             "locatie": "Clubhuis Wilgendaal",
             "opmerking": ""
         },
@@ -323,9 +363,9 @@
         },
         {
             "title": "Toernooi VIP",
-            "start": "2026-10-07T19:30:00",
+            "start": "2026-10-07T18:00:00",
             "end": "2026-10-07T23:59:00",
-            "starttijd": "19:30",
+            "starttijd": "18:00",
             "eindtijd": "23:59",
             "organisatie": "VIP",
             "locatie": "Clubhuis Wilgendaal",
