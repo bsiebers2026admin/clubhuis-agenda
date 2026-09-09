@@ -1,5 +1,5 @@
 {
-    "last_updated": "09-09-2026 12:50",
+    "last_updated": "09-09-2026 12:55",
     "events": [
         {
             "title": "Bestuur SOCH + adviseur",
@@ -272,6 +272,26 @@
             "opmerking": ""
         },
         {
+            "title": "Oktoberfest VIP",
+            "start": "2026-09-29T19:30:00",
+            "end": "2026-09-29T23:59:00",
+            "starttijd": "19:30",
+            "eindtijd": "23:59",
+            "organisatie": "VIP",
+            "locatie": "Clubhuis Wilgendaal",
+            "opmerking": ""
+        },
+        {
+            "title": "Toernooi VIP",
+            "start": "2026-09-30T19:30:00",
+            "end": "2026-09-30T23:59:00",
+            "starttijd": "19:30",
+            "eindtijd": "23:59",
+            "organisatie": "VIP",
+            "locatie": "Clubhuis Wilgendaal",
+            "opmerking": ""
+        },
+        {
             "title": "98e verjaardag Herpinia",
             "start": "2026-10-01T09:00:00",
             "end": "2026-10-01T23:59:00",
@@ -288,6 +308,26 @@
             "starttijd": "20:00",
             "eindtijd": "23:00",
             "organisatie": "Herpinia",
+            "locatie": "Clubhuis Wilgendaal",
+            "opmerking": ""
+        },
+        {
+            "title": "Oktoberfest VIP",
+            "start": "2026-10-06T19:30:00",
+            "end": "2026-10-06T23:59:00",
+            "starttijd": "19:30",
+            "eindtijd": "23:59",
+            "organisatie": "VIP",
+            "locatie": "Clubhuis Wilgendaal",
+            "opmerking": ""
+        },
+        {
+            "title": "Toernooi VIP",
+            "start": "2026-10-07T19:30:00",
+            "end": "2026-10-07T23:59:00",
+            "starttijd": "19:30",
+            "eindtijd": "23:59",
+            "organisatie": "VIP",
             "locatie": "Clubhuis Wilgendaal",
             "opmerking": ""
         },
