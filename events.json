@@ -1,5 +1,5 @@
 {
-    "last_updated": "09-09-2026 23:40",
+    "last_updated": "09-09-2026 23:45",
     "events": [
         {
             "title": "Bestuur SOCH + adviseur",
@@ -292,6 +292,16 @@
             "opmerking": ""
         },
         {
+            "title": "Competitie Tennis en padel",
+            "start": "2026-09-25T19:00:00",
+            "end": "2026-09-25T23:59:00",
+            "starttijd": "19:00",
+            "eindtijd": "23:59",
+            "organisatie": "VIP",
+            "locatie": "Clubhuis Wilgendaal",
+            "opmerking": ""
+        },
+        {
             "title": "Toernooi VIP",
             "start": "2026-09-28T18:00:00",
             "end": "2026-09-28T23:59:00",
@@ -358,6 +368,16 @@
             "starttijd": "09:00",
             "eindtijd": "23:59",
             "organisatie": "Herpinia",
+            "locatie": "Clubhuis Wilgendaal",
+            "opmerking": ""
+        },
+        {
+            "title": "Competitie Tennis en padel",
+            "start": "2026-10-02T19:00:00",
+            "end": "2026-10-02T23:59:00",
+            "starttijd": "19:00",
+            "eindtijd": "23:59",
+            "organisatie": "VIP",
             "locatie": "Clubhuis Wilgendaal",
             "opmerking": ""
         },
@@ -472,6 +492,16 @@
             "opmerking": ""
         },
         {
+            "title": "Competitie Tennis en padel",
+            "start": "2026-10-09T19:00:00",
+            "end": "2026-10-09T23:59:00",
+            "starttijd": "19:00",
+            "eindtijd": "23:59",
+            "organisatie": "VIP",
+            "locatie": "Clubhuis Wilgendaal",
+            "opmerking": ""
+        },
+        {
             "title": "Toernooi VIP",
             "start": "2026-10-10T09:30:00",
             "end": "2026-10-10T17:00:00",
@@ -512,6 +542,16 @@
             "opmerking": ""
         },
         {
+            "title": "Competitie Tennis en padel",
+            "start": "2026-10-16T19:00:00",
+            "end": "2026-10-16T23:59:00",
+            "starttijd": "19:00",
+            "eindtijd": "23:59",
+            "organisatie": "VIP",
+            "locatie": "Clubhuis Wilgendaal",
+            "opmerking": ""
+        },
+        {
             "title": "Husselen Tennis en Padel",
             "start": "2026-10-21T19:30:00",
             "end": "2026-10-21T22:00:00",
@@ -519,6 +559,26 @@
             "eindtijd": "22:00",
             "organisatie": "VIP",
             "locatie": "Sportpark/Clubhuis Wilgendaal",
+            "opmerking": ""
+        },
+        {
+            "title": "Competitie Tennis en padel (reserve)",
+            "start": "2026-10-23T19:00:00",
+            "end": "2026-10-23T23:59:00",
+            "starttijd": "19:00",
+            "eindtijd": "23:59",
+            "organisatie": "VIP",
+            "locatie": "Clubhuis Wilgendaal",
+            "opmerking": ""
+        },
+        {
+            "title": "Competitie Tennis en padel (reserve)",
+            "start": "2026-10-30T19:00:00",
+            "end": "2026-10-30T23:59:00",
+            "starttijd": "19:00",
+            "eindtijd": "23:59",
+            "organisatie": "VIP",
+            "locatie": "Clubhuis Wilgendaal",
             "opmerking": ""
         },
         {
