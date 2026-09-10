@@ -1,5 +1,5 @@
 {
-    "last_updated": "10-09-2026 14:55",
+    "last_updated": "10-09-2026 15:00",
     "events": [
         {
             "title": "Bestuur SOCH + adviseur",
@@ -589,16 +589,6 @@
             "eindtijd": "22:30",
             "organisatie": "Herpinia",
             "locatie": "Clubhuis",
-            "opmerking": ""
-        },
-        {
-            "title": "Feestavond VIP",
-            "start": "2026-11-07T19:30:00",
-            "end": "2026-11-07T23:59:00",
-            "starttijd": "19:30",
-            "eindtijd": "23:59",
-            "organisatie": "VIP",
-            "locatie": "Clubhuis Wilgendaal",
             "opmerking": ""
         },
         {
