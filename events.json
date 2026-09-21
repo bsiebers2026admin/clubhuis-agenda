@@ -1,5 +1,5 @@
 {
-    "last_updated": "21-09-2026 22:35",
+    "last_updated": "21-09-2026 22:40",
     "events": [
         {
             "title": "Bestuur SOCH + adviseur",
@@ -539,6 +539,16 @@
             "eindtijd": "23:00",
             "organisatie": "VIP",
             "locatie": "Clubhuis Wilgendaal",
+            "opmerking": ""
+        },
+        {
+            "title": "Glas vervangen kantine en spreekkamer",
+            "start": "2026-10-16T07:00:00",
+            "end": "2026-10-16T19:00:00",
+            "starttijd": "07:00",
+            "eindtijd": "19:00",
+            "organisatie": "SOCH",
+            "locatie": NaN,
             "opmerking": ""
         },
         {
