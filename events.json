@@ -1,5 +1,5 @@
 {
-    "last_updated": "07-10-2026 22:00",
+    "last_updated": "07-10-2026 22:05",
     "events": [
         {
             "title": "Bestuur SOCH + adviseur",
@@ -642,14 +642,14 @@
             "opmerking": ""
         },
         {
-            "title": "Damestoernooi Herpinia",
+            "title": "Damestoernooi Herpinia ",
             "start": "2026-11-13T19:30:00",
             "end": "2026-11-13T23:59:00",
             "starttijd": "19:30",
             "eindtijd": "23:59",
             "organisatie": "Herpinia",
             "locatie": "Clubhuis Wilgendaal",
-            "opmerking": ""
+            "opmerking": "(reservering)"
         },
         {
             "title": "Competitie Tennis en padel",
@@ -730,6 +730,26 @@
             "organisatie": "Herpinia",
             "locatie": "Clubhuis Wilgendaal",
             "opmerking": ""
+        },
+        {
+            "title": "Sponsoravond Herpinia",
+            "start": "2027-03-14T20:00:00",
+            "end": "2027-03-14T23:59:00",
+            "starttijd": "20:00",
+            "eindtijd": "23:59",
+            "organisatie": "Herpinia",
+            "locatie": "Clubhuis Wilgendaal",
+            "opmerking": "Uitgesteld wegens verbouwing"
+        },
+        {
+            "title": "Sponsoravond Herpinia",
+            "start": "2026-09-18T20:00:00",
+            "end": "2026-09-18T23:59:00",
+            "starttijd": "20:00",
+            "eindtijd": "23:59",
+            "organisatie": "Herpinia",
+            "locatie": "Clubhuis Wilgendaal",
+            "opmerking": "Uitgesteld wegens verbouwing"
         }
     ]
 }
