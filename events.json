@@ -1,5 +1,5 @@
 {
-    "last_updated": "18-10-2026 21:00",
+    "last_updated": "18-10-2026 21:05",
     "events": [
         {
             "title": "Bestuur SOCH + adviseur",
@@ -600,6 +600,16 @@
             "organisatie": "SOCH",
             "locatie": "Clubhuis Wilgendaal",
             "opmerking": ""
+        },
+        {
+            "title": "Mountainbiketocht Coppie",
+            "start": "2026-11-03T19:00:00",
+            "end": "2026-11-03T21:00:00",
+            "starttijd": "19:00",
+            "eindtijd": "21:00",
+            "organisatie": "Extern",
+            "locatie": "Clubhuis Wilgendaal",
+            "opmerking": "Normaal ca. 350 deelnemers"
         },
         {
             "title": "Algemene Ledenvergadering Herpinia",
