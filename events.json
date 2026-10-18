@@ -1,5 +1,5 @@
 {
-    "last_updated": "18-10-2026 15:40",
+    "last_updated": "18-10-2026 15:45",
     "events": [
         {
             "title": "Bestuur SOCH + adviseur",
@@ -742,7 +742,7 @@
             "opmerking": ""
         },
         {
-            "title": "Competitie Tennis en padel",
+            "title": "Competitie Tennis",
             "start": "2027-01-14T19:00:00",
             "end": "2027-01-14T23:59:00",
             "starttijd": "19:00",
@@ -752,9 +752,39 @@
             "opmerking": ""
         },
         {
-            "title": "Competitie Tennis en padel",
+            "title": "Competitie Tennis",
             "start": "2027-01-15T19:00:00",
             "end": "2027-01-15T23:59:00",
+            "starttijd": "19:00",
+            "eindtijd": "23:59",
+            "organisatie": "VIP",
+            "locatie": "Clubhuis Wilgendaal",
+            "opmerking": ""
+        },
+        {
+            "title": "Competitie Tennis",
+            "start": "2027-01-22T19:00:00",
+            "end": "2027-01-22T23:59:00",
+            "starttijd": "19:00",
+            "eindtijd": "23:59",
+            "organisatie": "VIP",
+            "locatie": "Clubhuis Wilgendaal",
+            "opmerking": ""
+        },
+        {
+            "title": "Competitie padel",
+            "start": "2027-01-29T19:00:00",
+            "end": "2027-01-29T23:59:00",
+            "starttijd": "19:00",
+            "eindtijd": "23:59",
+            "organisatie": "VIP",
+            "locatie": "Clubhuis Wilgendaal",
+            "opmerking": ""
+        },
+        {
+            "title": "Competitie Tennis",
+            "start": "2027-02-11T19:00:00",
+            "end": "2027-02-11T23:59:00",
             "starttijd": "19:00",
             "eindtijd": "23:59",
             "organisatie": "VIP",
