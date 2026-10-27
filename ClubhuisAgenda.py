@@ -7,13 +7,17 @@ from datetime import datetime
 
 import subprocess
 
+# Keeps git from opening a console window when the script runs in the background (Windows only).
+NO_WINDOW = subprocess.CREATE_NO_WINDOW
+
 
 def publish_to_github():
 
     result = subprocess.run(
         ["git", "status", "--porcelain"],
         capture_output=True,
-        text=True
+        text=True,
+        creationflags=NO_WINDOW
     )
 
     if result.stdout.strip():
@@ -21,7 +25,8 @@ def publish_to_github():
         print("events.json gewijzigd")
 
         subprocess.run(
-            ["git", "add", "."]
+            ["git", "add", "."],
+            creationflags=NO_WINDOW
         )
 
         subprocess.run(
@@ -30,11 +35,13 @@ def publish_to_github():
                 "commit",
                 "-m",
                 "Automatische agenda update"
-            ]
+            ],
+            creationflags=NO_WINDOW
         )
 
         subprocess.run(
-            ["git", "push"]
+            ["git", "push"],
+            creationflags=NO_WINDOW
         )
 
         print("GitHub bijgewerkt")
