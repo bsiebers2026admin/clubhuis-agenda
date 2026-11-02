@@ -1,5 +1,5 @@
 {
-    "last_updated": "02-11-2026 19:00",
+    "last_updated": "02-11-2026 20:20",
     "events": [
         {
             "title": "Bestuur SOCH + adviseur",
@@ -742,6 +742,16 @@
             "opmerking": ""
         },
         {
+            "title": "Vergadering bestuur Coppi",
+            "start": "2026-12-14T20:00:00",
+            "end": "2026-12-14T22:00:00",
+            "starttijd": "20:00",
+            "eindtijd": "22:00",
+            "organisatie": "Extern",
+            "locatie": "Clubhuis Wilgendaal",
+            "opmerking": ""
+        },
+        {
             "title": "Husselen Tennis en Padel",
             "start": "2026-12-16T19:30:00",
             "end": "2026-12-16T22:00:00",
@@ -812,6 +822,16 @@
             "opmerking": ""
         },
         {
+            "title": "Vergadering bestuur Coppi",
+            "start": "2027-01-25T20:00:00",
+            "end": "2027-01-25T22:00:00",
+            "starttijd": "20:00",
+            "eindtijd": "22:00",
+            "organisatie": "Extern",
+            "locatie": "Clubhuis Wilgendaal",
+            "opmerking": ""
+        },
+        {
             "title": "Bestuur SOCH - verenigingen",
             "start": "2027-01-25T20:30:00",
             "end": "2027-01-25T22:30:00",
@@ -842,12 +862,32 @@
             "opmerking": ""
         },
         {
+            "title": "Vergadering bestuur Coppi",
+            "start": "2027-02-22T20:00:00",
+            "end": "2027-02-22T22:00:00",
+            "starttijd": "20:00",
+            "eindtijd": "22:00",
+            "organisatie": "Extern",
+            "locatie": "Clubhuis Wilgendaal",
+            "opmerking": ""
+        },
+        {
             "title": "Bestuur SOCH - verenigingen",
             "start": "2027-02-22T20:30:00",
             "end": "2027-02-22T22:30:00",
             "starttijd": "20:30",
             "eindtijd": "22:30",
             "organisatie": "SOCH",
+            "locatie": "Clubhuis Wilgendaal",
+            "opmerking": ""
+        },
+        {
+            "title": "Vergadering bestuur Coppi",
+            "start": "2027-03-10T20:00:00",
+            "end": "2027-03-10T22:00:00",
+            "starttijd": "20:00",
+            "eindtijd": "22:00",
+            "organisatie": "Extern",
             "locatie": "Clubhuis Wilgendaal",
             "opmerking": ""
         },
