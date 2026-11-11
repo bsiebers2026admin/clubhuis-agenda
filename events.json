@@ -1,5 +1,5 @@
 {
-    "last_updated": "11-11-2026 23:30",
+    "last_updated": "11-11-2026 23:35",
     "events": [
         {
             "title": "Bestuur SOCH + adviseur",
@@ -738,6 +738,16 @@
             "starttijd": "19:00",
             "eindtijd": "23:59",
             "organisatie": "VIP",
+            "locatie": "Clubhuis Wilgendaal",
+            "opmerking": ""
+        },
+        {
+            "title": "Jaarhelftafsluiting Herpinia Jeugdkader",
+            "start": "2026-12-12T16:00:00",
+            "end": "2026-12-12T20:30:00",
+            "starttijd": "16:00",
+            "eindtijd": "20:30",
+            "organisatie": "Herpinia",
             "locatie": "Clubhuis Wilgendaal",
             "opmerking": ""
         },
