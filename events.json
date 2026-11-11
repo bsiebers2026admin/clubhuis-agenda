@@ -1,5 +1,5 @@
 {
-    "last_updated": "11-11-2026 21:10",
+    "last_updated": "11-11-2026 21:15",
     "events": [
         {
             "title": "Bestuur SOCH + adviseur",
@@ -618,7 +618,7 @@
             "starttijd": "20:30",
             "eindtijd": "22:30",
             "organisatie": "Herpinia",
-            "locatie": "Clubhuis",
+            "locatie": "Clubhuis Wilgendaal",
             "opmerking": ""
         },
         {
@@ -778,7 +778,7 @@
             "starttijd": "14:00",
             "eindtijd": "18:00",
             "organisatie": "Herpinia",
-            "locatie": "Clubhuis",
+            "locatie": "Clubhuis Wilgendaal",
             "opmerking": "Verenigingen gezamenlijk? 15 uur receptie?"
         },
         {
@@ -790,6 +790,16 @@
             "organisatie": "Herpinia",
             "locatie": "Clubhuis Wilgendaal",
             "opmerking": ""
+        },
+        {
+            "title": "Herpinia Quiz 2027",
+            "start": "2027-01-08T19:30:00",
+            "end": "2027-01-08T23:59:00",
+            "starttijd": "19:30",
+            "eindtijd": "23:59",
+            "organisatie": "SOCH",
+            "locatie": "Clubhuis Wilgendaal",
+            "opmerking": "Zie website Herpinia"
         },
         {
             "title": "Competitie Tennis",
