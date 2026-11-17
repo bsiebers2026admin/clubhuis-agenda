@@ -1,5 +1,5 @@
 {
-    "last_updated": "17-11-2026 15:45",
+    "last_updated": "17-11-2026 15:50",
     "events": [
         {
             "title": "Bestuur SOCH + adviseur",
@@ -810,6 +810,16 @@
             "organisatie": "SOCH",
             "locatie": "Clubhuis Wilgendaal",
             "opmerking": "Zie website Herpinia"
+        },
+        {
+            "title": "Nieuwjaarshusselen",
+            "start": "2027-01-10T09:30:00",
+            "end": "2027-01-10T15:00:00",
+            "starttijd": "09:30",
+            "eindtijd": "15:00",
+            "organisatie": "VIP",
+            "locatie": "Clubhuis Wilgendaal",
+            "opmerking": ""
         },
         {
             "title": "Competitie Tennis",
